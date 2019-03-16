@@ -25,7 +25,7 @@ cardsInPlay = [];
 
 function checkForMatch(){
 
-    var message = document.getElementById("message");
+    var message = document.getElementById("game-board-feedback");
     
     if (cardsInPlay[0] === cardsInPlay[1]) {
         message.innerHTML = "You found a match!";
