@@ -24,11 +24,13 @@ cards = [
 cardsInPlay = [];
 
 function checkForMatch(){
+
+    var message = document.getElementById("message");
     
     if (cardsInPlay[0] === cardsInPlay[1]) {
-        console.log("You found a match!");
+        message.innerHTML = "You found a match!";
     } else {
-        console.log("Sorry, try again.");
+        message.innerHTML = "Sorry, try again.";
     }
 };
 
